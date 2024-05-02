@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "name": "Cox's Bazar",
+    "img": "https://example.com/intro_programming.jpg",
+    "desc": "Cox's Bazar is the longest sea beach in our country"
+  },
+  {
+    "id": 2,
+    "name": "Sreemangal",
+    "img": "https://example.com/data_science_fundamentals.jpg",
+    "desc": "If you want to go to any jungle then you need to go Sreemangal"
+  },
+  {
+    "id": 3,
+    "name": "Sundarban",
+    "img": "https://example.com/web_development_bootcamp.jpg",
+    "desc": "If you want to see sundor forest then you must go to Sundarban"
+  }
+  
+]
