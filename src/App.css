@@ -1,0 +1,22 @@
+
+.header a{
+text-decoration: none;
+}
+
+
+.places-card {
+    border-radius: 20px;
+    transition: transform 0.50s;
+    cursor: pointer;
+}
+
+
+.places-card:hover {
+    border: 3px solid rgb(255, 213, 0);
+    transform: translate(0, -20px);
+}
+
+
+
+
+

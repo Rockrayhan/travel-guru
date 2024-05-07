@@ -1,25 +1,45 @@
+import { useContext } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { AuthContext } from '../provider/AuthProvider';
 
 const Header = () => {
+    const {user, logOut} = useContext(AuthContext) ;
+
+    const location = useLocation();
+    const isDarkBackground = location.pathname === '/' || location.pathname.startsWith('/booking/') || location.pathname.startsWith('/details/')  ;
+
+    const headerStyle = {
+        color: isDarkBackground ? 'white' : 'black'
+    };
+
     return (
         <>
-           <Navbar expand="lg" className="bg-transparent">
-      <Container className=''>
-        <Navbar.Brand className='text-white' href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="d-flex gap-4 text-white ">
-            <Link className='text-decoration-none text-white' to="/">Home</Link>
-            <Link className='text-decoration-none text-white' to="/">Search</Link>
-            <Link className='text-decoration-none text-white' to="/">Destination</Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+            <Navbar expand="lg" className="bg-transparent header">
+                <Container>
+                    <Navbar.Brand style={headerStyle} href="#home">Travel GURU</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="d-flex gap-4">
+                            <Link style={headerStyle} to="/">Home</Link>
+                            <Link style={headerStyle} to="/">Search</Link>
+                            <Link style={headerStyle} to="/">Destination</Link>
+                        </Nav>
+                    </Navbar.Collapse>
+               {
+                user ?      
+            <button onClick={logOut} className={`btn btn-danger ${isDarkBackground ? 'text-white' : 'text-black'}`}>
+                 Sign out 
+            </button>  
+            :     
+             <button className={`btn btn-warning ${isDarkBackground ? 'text-white' : 'text-black'}`}>
+                        <Link style={headerStyle} to='/login'> Login </Link>
+            </button>
+               }
+                </Container>
+            </Navbar>
         </>
     );
 };

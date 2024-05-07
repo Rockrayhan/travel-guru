@@ -2,6 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Outlet } from "react-router-dom";
 import Header from "./Components/Header";
 import bg from "../public/images/bg.png";
+import './App.css' ;
+
 
 function App() {
   const bgStyle = {

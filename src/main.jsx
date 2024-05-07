@@ -10,6 +10,9 @@ import Home from './Components/Home.jsx';
 import Login from './Components/Login.jsx';
 import Register from './Components/Register.jsx';
 import BookingDetails from './Components/BookingDetails.jsx';
+import HotelDetails from './Components/HotelDetails.jsx';
+import AuthProvider from './provider/AuthProvider.jsx';
+import PrivateRoute from './PrivateRoute/PrivateRoute.jsx';
 
 
 
@@ -21,17 +24,17 @@ const router = createBrowserRouter([
           {
             path:"",
             element: <Home/>,
-            loader: () => fetch('./fakedata.json')
+            loader: () => fetch('/fakedata.json')
           },          
           {
             path:"/booking/:id",
             element: <BookingDetails/>,
-            loader: () => fetch('./fakedata.json')
+            loader: () => fetch('/fakedata.json')
           },          
           {
             path:"/details/:id",
-            element: <BookingDetails/>,
-            loader: () => fetch('./fakedata.json')
+            element: <PrivateRoute> <HotelDetails/> </PrivateRoute>,
+            loader: () => fetch('/fakedata.json')
           },          
     ]
   },
@@ -49,6 +52,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+        <AuthProvider>
         <RouterProvider router={router} />
+        </AuthProvider>
   </React.StrictMode>,
 )
