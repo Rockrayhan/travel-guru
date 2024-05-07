@@ -10,13 +10,14 @@ const Register = () => {
         e.preventDefault();
         const form = new FormData(e.currentTarget) ;
 
-        const name = form.get('name') ;
+        
+        const displayName = form.get('displayName')
         const email = form.get('email')
         const password = form.get('password')
-        console.log(name , email, password);
+        console.log(displayName , email, password);
 
         // create user
-        createUser(email, password)
+        createUser(email, password, displayName)
         .then(res => {
             console.log(res.user);
         })
@@ -33,7 +34,7 @@ const Register = () => {
            <h1>  Please  Register</h1> 
 
            <form onSubmit={handleRegister}>
-            <input type="text" placeholder='Give your Name' name='name'/> <br />
+            <input type="text" placeholder='Give your Name' name='displayName'/> <br />
             <input type="email" placeholder='Give your Email' name='email' /> <br />
             <input type="password" placeholder='Password' name='password' /> <br />
             

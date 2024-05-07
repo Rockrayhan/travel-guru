@@ -29,10 +29,16 @@ const Header = () => {
                         </Nav>
                     </Navbar.Collapse>
                {
-                user ?      
-            <button onClick={logOut} className={`btn btn-danger ${isDarkBackground ? 'text-white' : 'text-black'}`}>
+                user ?   
+                
+                
+            <div>
+                <span className={`${isDarkBackground ? 'text-white' : 'text-black'}`}> {user.displayName} </span>
+                <button onClick={logOut} className={`btn btn-danger ${isDarkBackground ? 'text-white' : 'text-black'}`}>
                  Sign out 
             </button>  
+                <span><img className='img-fluid user-img' src={user.photoURL} alt="" /></span>
+            </div>
             :     
              <button className={`btn btn-warning ${isDarkBackground ? 'text-white' : 'text-black'}`}>
                         <Link style={headerStyle} to='/login'> Login </Link>
