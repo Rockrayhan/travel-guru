@@ -31,13 +31,14 @@ const router = createBrowserRouter([
             element: <BookingDetails/>,
             loader: () => fetch('/fakedata.json')
           },          
-          {
-            path:"/details/:id",
-            element: <PrivateRoute> <HotelDetails/> </PrivateRoute>,
-            loader: () => fetch('/fakedata.json')
-          },          
+        
     ]
   },
+  {
+    path:"/details/:id",
+    element: <PrivateRoute> <HotelDetails/> </PrivateRoute>,
+    loader: () => fetch('/fakedata.json')
+  },  
   {
     path:"/login",
     element: <Login/>

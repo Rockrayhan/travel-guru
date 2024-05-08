@@ -8,7 +8,8 @@ import './App.css' ;
 function App() {
   const bgStyle = {
     backgroundImage: `url(${bg})`,
-    height: '100vh',
+    // height: '100vh',
+    padding:'30px',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     width:'100%',

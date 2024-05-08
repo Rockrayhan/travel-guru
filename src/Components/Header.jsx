@@ -9,7 +9,7 @@ const Header = () => {
     const {user, logOut} = useContext(AuthContext) ;
 
     const location = useLocation();
-    const isDarkBackground = location.pathname === '/' || location.pathname.startsWith('/booking/') || location.pathname.startsWith('/details/')  ;
+    const isDarkBackground = location.pathname === '/' || location.pathname.startsWith('/booking/') ;
 
     const headerStyle = {
         color: isDarkBackground ? 'white' : 'black'

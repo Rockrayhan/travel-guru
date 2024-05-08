@@ -3,7 +3,27 @@
     "id": 1,
     "name": "Cox's Bazar",
     "img": "https://i.imgur.com/xMp6anx.png",
-    "desc": "Cox's Bazar is the longest sea beach in our country"
+    "desc": "Cox's Bazar is the longest sea beach in our country",
+    "hotel_info" : [
+      {
+        "hotel_name": " Sea Perl " ,
+        "hotel_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsPSIGvYr1q1YgWMm4nthNzC6-8m2-B4k2X0auhCXRTQ&s",
+        "desc": "Sea perl Hotel Description",
+        "rating": "4"
+      },
+      {
+        "hotel_name": " Sea Crown " ,
+        "hotel_img" : "https://hotelseacrownbd.com/wp-content/uploads/2017/07/Presidential-Suite_Hotel-Sea-Crown_Cox-Bazar-14-570x400.jpg",
+        "desc": "Sea Crown Hotel Description",
+        "rating": "5"
+      },
+      {
+        "hotel_name": " Ocean Paradise " ,
+        "hotel_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzlzxQkdpOfPtwTV3y-ASaY7xTifpUNCi-ffVaR55q1Q&s",
+        "desc": "Ocean Paradise Description",
+        "rating": "3"
+      }
+    ]
   },
   {
     "id": 2,
