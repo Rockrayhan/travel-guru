@@ -29,13 +29,52 @@
     "id": 2,
     "name": "Sreemangal",
     "img": "https://i.imgur.com/zTHvCXD.png",
-    "desc": "If you want to go to any jungle then you need to go Sreemangal"
+    "desc": "If you want to go to any jungle then you need to go Sreemangal",
+    "hotel_info" : [
+      {
+        "hotel_name": " Sreemangal INN " ,
+        "hotel_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAluRktSiAz6U23t6kpB2ZTkNwvG05OvRxtF6X_10qPA&s",
+        "desc": "Sreemangal INN Hotel Description",
+        "rating": "4"
+      },
+      {
+        "hotel_name": " Sky Park Hotel " ,
+        "hotel_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHAULBh2vTjHoQMcNFR3LdX79WoQMxyzMXe5lQ8W3dxw&s",
+        "desc": "Sky Park Hotel Description",
+        "rating": "5"
+      },
+      {
+        "hotel_name": " Hotel D'More " ,
+        "hotel_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7nBVpsb9qhL80Mhs7kwTG8qH5KBlP1BUU-IsobuWbbA&s",
+        "desc": "Hotel D'More Description",
+        "rating": "3"
+      }
+    ]
   },
   {
     "id": 3,
     "name": "Sundarban",
     "img": "https://i.imgur.com/2VPYftt.png",
-    "desc": "If you want to see sundor forest then you must go to Sundarban"
+    "desc": "If you want to see sundor forest then you must go to Sundarban", "hotel_info" : [
+      {
+        "hotel_name": " The Royal Sundarban " ,
+        "hotel_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_77SND3DeIkJOnjjRSbDWneEVk6c3CUWKyyuzYLvzjA&s",
+        "desc": "The Royal Sundarban Resort Description",
+        "rating": "4"
+      },
+      {
+        "hotel_name": " Hamilton Island Sundarban " ,
+        "hotel_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNcXTz_F2CXycMWVqWztKCuo3u8c_rorDMYhKUuSFIKA&s",
+        "desc": "Hamilton Island Sundarban Hotel Description",
+        "rating": "5"
+      },
+      {
+        "hotel_name": " Ocean Paradise " ,
+        "hotel_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzlzxQkdpOfPtwTV3y-ASaY7xTifpUNCi-ffVaR55q1Q&s",
+        "desc": "Ocean Paradise Description",
+        "rating": "3"
+      }
+    ]
   }
   
 ]

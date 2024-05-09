@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="container mt-5">
       <Container className="row text-white">
-        <div className="col-lg-5">
+        <div className="col-lg-5 banner-left">
           <h1> Travel Guru </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cumque

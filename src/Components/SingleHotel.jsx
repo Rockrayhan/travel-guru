@@ -5,7 +5,7 @@ const SingleHotel = ({item}) => {
     return (
         <div className='row mt-5'>
             <div className="col-lg-5">
-                <img className='img-fluid'  style={{height:'150px', width:'250px'}} src={item.hotel_img} alt="" />
+                <img className='rounded-3'  style={{height:'150px', width:'250px'}} src={item.hotel_img} alt="" />
             </div>
             <div className="col-lg-7">
                 <h3>
