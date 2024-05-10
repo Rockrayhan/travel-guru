@@ -21,7 +21,7 @@ const Header = () => {
             <Navbar expand="lg" className="bg-transparent header container ">
                 <Container className='row'>
                     <Navbar.Brand className='col-lg-6'> <img className='brand-img' src={logo} alt="" /> </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" className='bg-white w-25' />
                     <Navbar.Collapse className='col-lg-6 right-nav' id="basic-navbar-nav">
                         <Nav className="d-flex gap-4 ">
                             <Link style={headerStyle} to="/">Home</Link>
@@ -35,7 +35,7 @@ const Header = () => {
                    
                    <div className='d-flex gap-3'>
                 <span className={`${isDarkBackground ? 'text-white' : 'text-black'} mt-2`}> {user.displayName} </span>
-                <button onClick={logOut} className={`btn btn-danger ${isDarkBackground ? 'text-white' : 'text-black'}`}>
+                <button onClick={logOut} className={`btn btn-danger w-50 ${isDarkBackground ? 'text-white' : 'text-black'}`}>
                  Sign out 
             </button>  
                 <span><img className='img-fluid user-img' src={user.photoURL} alt="" /></span>
