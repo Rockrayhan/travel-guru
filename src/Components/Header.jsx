@@ -34,7 +34,7 @@ const Header = () => {
                 
                    
                    <div className='d-flex gap-3'>
-                <span className={`${isDarkBackground ? 'text-white' : 'text-black'} mt-2`}> {user.displayName} </span>
+                <span className={`${isDarkBackground ? 'text-white' : 'text-black'} w-50 mt-2`}> {user.displayName} </span>
                 <button onClick={logOut} className={`btn btn-danger w-50 ${isDarkBackground ? 'text-white' : 'text-black'}`}>
                  Sign out 
             </button>  
