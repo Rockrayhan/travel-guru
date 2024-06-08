@@ -73,9 +73,11 @@ const BookingDetails = () => {
       </Form.Group>
     </div>
       <div className='d-flex justify-content-center my-2'>
-      <Button className={`w-75 p-2 ${user ? 'btn btn-danger' : 'btn btn-warning' } `}  type="submit">
-            <Link to={`/details/${id}`} className='text-black fw-bold text-decoration-none'> Book Now </Link>
+        <Link to={`/details/${id}`}>
+      <Button className={`px-4 py-2 ${user ? 'btn btn-danger' : 'btn btn-warning' } `}  type="submit">
+              Book Now 
       </Button>
+        </Link>
       </div>
     </Form>
 

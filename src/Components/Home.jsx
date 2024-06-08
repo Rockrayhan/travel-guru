@@ -12,10 +12,7 @@ const Home = () => {
         <div className="col-lg-5 banner-left">
           <h1> Travel Guru </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cumque
-            voluptas quasi sint iure, consequatur repudiandae modi praesentium
-            ex voluptates harum, adipisci culpa sed cum officia distinctio vel
-            quo placeat.
+            Travel as long as your pockekt is full with travel guru. Book your desired place, see the in located hotels near your location and make plans with your friends and family.
           </p>
         </div>
         <div className="col-lg-7">

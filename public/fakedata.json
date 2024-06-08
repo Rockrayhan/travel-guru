@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Cox's Bazar",
-    "img": "https://i.imgur.com/xMp6anx.png",
+    "img": "images/cox_bazar.png",
     "desc": "Cox's Bazar is the longest sea beach in our country",
     "hotel_info" : [
       {
@@ -28,7 +28,7 @@
   {
     "id": 2,
     "name": "Sreemangal",
-    "img": "https://i.imgur.com/zTHvCXD.png",
+    "img": "images/sreemangal.png",
     "desc": "If you want to go to any jungle then you need to go Sreemangal",
     "hotel_info" : [
       {
@@ -54,7 +54,7 @@
   {
     "id": 3,
     "name": "Sundarban",
-    "img": "https://i.imgur.com/2VPYftt.png",
+    "img": "images/sundarban.png",
     "desc": "If you want to see sundor forest then you must go to Sundarban", "hotel_info" : [
       {
         "hotel_name": " The Royal Sundarban " ,
